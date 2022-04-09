@@ -1,25 +1,170 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// class App extends React.Component{
+//   render (){
+//     var i = 1;
 
-export default App;
+//     // style the myStyle variable
+//     var myStyle = {
+//       fontSize:50,
+//       color: '#FF0000'
+//     }
+//     return(
+//       <div>
+
+//         {/* printing the heading para */}
+//         Hello World!
+//         <h1>Header</h1>
+//         <h2>Content</h2>
+//         <p>This is the content</p>
+
+//         {/* sum two intager */}
+//         <h1>{1+1}</h1>
+
+//         {/* if condition */}
+//         <h1> {i == 1 ? 'True!' : 'False! '} </h1>
+//         <h1> {i == 2 ? 'True!' : 'False! '} </h1>
+
+//         {/* deffind veriable using the heding into css */}
+//         <h1 style={myStyle}>Header</h1>
+
+//         <Header/>
+//         <Content/>
+//         <Apps/>
+//       </div>
+//     );
+//   }
+// }
+
+// class Header extends React.Component{
+//   render(){
+//     return (
+//       <div>
+//         <h1>Header</h1>
+//       </div>
+//     );
+//   }
+// }
+// class Content extends React.Component{
+//   render(){
+//     return (
+//       <div>
+//         <h2>
+//           Content
+//         </h2>
+//       </div>
+//     );
+//   }
+// }
+
+//<====defind the row anw co
+
+// class App extends React.Component{
+//   constructor(){
+//     super();
+//     this.state = {
+//       data:
+//       [
+//         {
+//           "id":1,
+//           "name":"foo",
+//           "age":"39"
+//         },
+//         {
+//           "id":2,
+//           "name":"foo",
+//           "age":"30"
+//         },
+//         {
+//           "id":3,
+//           "name":"foo",
+//           "age":"40"
+//         }
+//       ]
+//     }
+//   }
+//   render(){
+//     return(
+//       <div>
+//         <Header/> 
+//           <table>
+//           <tbody>
+//             {this.state.data.map((person, i) => <TableRow key = {i}
+//             data = {person} />)}
+//           </tbody>
+//           </table>
+//       </div>
+//     );
+//   }
+// }
+// class Header extends React.Component{
+//   render(){
+//     return (
+//       <div>
+//         <h1>Header</h1>
+//       </div>
+//     );
+//   }
+// }
+
+// class TableRow extends React.Component{
+//   render(){
+//     return(
+//       <tr>
+//         <td>{this.props.data.id}</td>
+//         <td>{this.props.data.name}</td>
+//         <td>{this.props.data.age}</td>
+//       </tr>
+//     );
+//   }
+// }
+
+//<===Props funtion use the differnt string to anther place
+
+// class App extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       header: "Header fpr state..",
+//       content: "Content from state.."
+//     }
+//   }
+//   render(){
+//     return(
+//       <div>
+//         <h1>{this.state.header}</h1>
+//         <h2>{this.state.content}</h2>
+//       </div>
+//     );
+//   }
+// }
+
+//<===Props funtion use the differnt string to anther place
+
+// class App extends React.Component {
+//   constructor(props){
+//     super(props);
+//     this.state ={
+//       name:"dkf",
+//     }
+//   }
+//   render(){
+//     return(
+//       <div>
+//         <JTP jtpProps = {this.state.name}/>
+//       </div>
+//     );
+//   }
+// }
+// class JTP extends React.Component{
+//   render(){
+//     return(
+//       <div>
+//         <h3>welcome to {this.props.jtpProps}</h3>
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;

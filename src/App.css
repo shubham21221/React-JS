@@ -1,4 +1,14 @@
 .App {
   text-align: center;
+  background-color: blue;
+}
+.h{
+  background-color: blue;
+}
+.dii{
+  background-color: aqua;
+}
+.dii:hover{
+  background-color: rebeccapurple;
 }
 

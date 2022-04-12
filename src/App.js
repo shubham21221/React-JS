@@ -1,5 +1,25 @@
+// import logo from './logo.svg';
 import React, {Component} from 'react';
 import './App.css';
+import Header from './myComponents/Header';
+import Footer from "./myComponents/Footer";
+
+function App() {
+    var myStyle = {
+              fontSize:50,
+              color: '#FF0000'
+            }
+  return (
+    <>
+    <Header /> 
+    <h1 style={myStyle}>Header</h1>
+    <h1 className='h'> Header </h1>
+    <Footer/>
+  </>
+  );
+}
+
+export default App;
 
 // class App extends React.Component{
 //   render (){
@@ -168,3 +188,29 @@ import './App.css';
 // }
 
 // export default App;
+
+
+// class App extends Component{
+//     constructor(props){
+//         super(props);
+//         this.state={
+//             data:'www.google.com'
+//         }
+//         this.handleEvent = this.handleEvent.bind(this);
+//     }
+//     handleEvent(){
+//         console.log(this.props);
+//     }
+//     render(){
+//         return(
+//             <div className='App'>
+//                 <h2>React constructor Example</h2>
+//                 <input type="text" value={this.state.data}/>
+//                 <button onClick={this.handleEvent}>place Click</button>
+//             </div>
+//         )
+//     }
+// }
+
+
+
